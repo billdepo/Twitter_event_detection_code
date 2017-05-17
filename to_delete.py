@@ -24,8 +24,14 @@ class listener(StreamListener):
             gps=tweet_dict["user"]["location"]
             tweet = tweet_dict["text"]  # store tweet's text
             tweet = tweet.replace('\n', '')  # removes all newline characters from tweet's text
+            print (tweet_dict)
 
-            print(tweet_dict["user"]["geo_enabled"], tweet_dict["user"]["created_at"]) #print the tweet to the console
+            with open('json_format_check.txt', "a",encoding="utf-8") as file:
+                file.write(str(tweet_dict))
+                file.write("\n\n*****************************************************************************************\n\n")
+
+            print(tweet_dict) #print the tweet to the console
+            #            print(tweet_dict, tweet_dict["user"]["created_at"]) #print the tweet to the console
 
         except KeyError:
             pass    #if an error occurs (can happen e.g. with encoding problems) just pass and do nothing so the execution of the program doesn't stop
