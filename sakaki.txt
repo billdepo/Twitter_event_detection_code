@@ -1,0 +1,41 @@
+﻿**********************************
+Earthquake Shakes Twitter Users:
+Real-time Event Detection by Social Sensors
+---------------------------------
+three groups of features for each tweet as follows:
+
+	Features A (statistical features) the number of words
+	in a tweet message, and the position of the query word
+	within a tweet.
+
+	Features B (keyword features) the words in a tweet (Because a tweet is usually short, we use 	every word in a tweet by converting it into a word ID).
+
+	Features C (word context features) the words before and
+	after the query word.
+
+In the case of English, we apply a standard stopword
+elimination and stemming. We compare the usefulness
+of the features in Section 4.
+
+**********************************
+
+
+**********************************
+
+
+**********************************
+
+
+**********************************
+
+
+**********************************
+
+
+**********************************
+
+
+**********************************
+
+
+**********************************
